@@ -27,7 +27,7 @@ subtitle                 : Humanitarian Logistics Serious Game # site tagline th
 name                     : "Thiago Correia Pereira"
 description              : "Learn about humanitarian logistic operations through a serious game."
 url                      : "https://thiagocorreiap.github.io"
-baseurl                  : "/hurricane-game"
+baseurl                  : "/HurricaneLog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/game_icon.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
