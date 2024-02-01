@@ -47,7 +47,7 @@ Suivez les instructions :
 
 1. Cliquez sur **autoriser**.
 
-Si vous rencontrez un avertissement différent, veuillez consulter le <a href="https://support.apple.com/en-ca/HT202491">guide *Ouvrir des apps en toute sécurité* d'Apple</a>.
+Si vous rencontrez un avertissement différent, veuillez consulter le <a href="https://support.apple.com/fr-ca/HT202491">guide *Ouvrir les apps en sécurité* d'Apple</a>.
 
 ## Installation sous Linux <a name="linux"></a>
 
