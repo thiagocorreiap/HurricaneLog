@@ -1,0 +1,26 @@
+en: Primary navigation
+fr: Navigation principale
+
+menu_items:
+  en:
+    - label: Home
+      path: /
+    - label: About
+      path: /about/
+    - label: Download
+      path: /donwload/
+    - label: Features
+      path: /features/
+    - label: Publications
+      path: /publications/
+  fr:
+    - label: Accueil
+      path: /fr/
+    - label: À propos
+      path: /fr/about/
+    - label: Télécharger
+      path: /fr/donwload/
+    - label: Fonctionnalités
+      path: /fr/features/
+    - label: Publications
+      path: /fr/publications/
