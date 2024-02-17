@@ -34,4 +34,33 @@ feature_row:
     btn_label: "En savoir plus"      
 ---
 
+<style>
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .feature_image {
+        padding-right: 20px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        height: auto;
+        margin-left: auto;
+    }
+
+    .center {
+        clear: both;
+    }
+</style>
+
+<div class="container">
+  <div class="center" style="margin-left: 20px;">
+      <h3>HurricaneLog remporte un prix au concours de jeux sérieux</h3>
+      <p>Honoré du prix spécial dans la catégorie des jeux adressant la préparation aux crises et urgences, la réponse, la récupération et la résilience lors du concours de la Serious Game Society.</p>
+  </div>
+  <img src="{{ '/assets/images/news/prize.png' | relative_url }}" alt="prize" width="400" class="feature_image">
+</div>
+
+ <hr>
+
 {% include feature_row %}

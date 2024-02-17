@@ -6,7 +6,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/home_header.png
   actions:
-    - label: "<i class='fas fa-download'></i> Download now"
+    - label: "<i class='fas fa-download'></i> Download"
       url: "/download/"
 excerpt: >
   Learn about humanitarian logistic operations while having fun.<br />
@@ -33,5 +33,36 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
+
+<style>
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .feature_image {
+        padding-right: 20px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        height: auto;
+        margin-left: auto;
+    }
+
+    .center {
+        clear: both;
+    }
+</style>
+
+<!-- <h3>Awarded top prize in serious game competition</h3> -->
+<!-- <p>The seriour game competition organized by the Serious Game Society awarded HurricanLog the special prize on best serious game addressing crisis and emergency preparedness, response, recovery and resilience.</p> -->
+<div class="container">
+  <div class="center" style="margin-left: 20px;">
+      <h3>HurricaneLog Wins Top Prize in Serious Game Competition</h3>
+      <p>Honored with the special prize in the category of games addressing crisis and emergency preparedness, response, recovery, and resilience at the Serious Game Society's competition.</p>
+  </div>
+  <img src="{{ '/assets/images/news/prize.png' | relative_url }}" alt="prize" width="400" class="feature_image">
+</div>
+
+ <hr>
 
 {% include feature_row %}
