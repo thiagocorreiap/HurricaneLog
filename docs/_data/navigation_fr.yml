@@ -1,0 +1,17 @@
+
+# main links
+main:
+#  - title: "Quick-Start Guide"
+#    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Accueil"
+    url: /fr/
+  - title: "À propos"
+    url: /fr/about/
+  - title: "Télécharger"
+    url: /fr/download/
+  - title: "Fonctionnalités"
+    url: /fr/features/
+  - title: "Publications"
+    url: /fr/publications/
+  - title: ":globe_with_meridians: en"
+    url: /

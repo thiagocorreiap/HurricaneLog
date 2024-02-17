@@ -1,13 +1,65 @@
 <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
-<link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | prepend:'/assets/favicons/' | absolute_url }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | prepend:'/assets/favicons/' | absolute_url }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | prepend:'/assets/favicons/' | absolute_url }}">
+<link rel="apple-touch-icon" sizes="180x180"
+    href="{{ 'apple-touch-icon.png' | prepend:'/assets/favicons/' | absolute_url }}">
+<link rel="icon" type="image/png" sizes="32x32"
+    href="{{ 'favicon-32x32.png' | prepend:'/assets/favicons/' | absolute_url }}">
+<link rel="icon" type="image/png" sizes="16x16"
+    href="{{ 'favicon-16x16.png' | prepend:'/assets/favicons/' | absolute_url }}">
 <link rel="manifest" href="{{ 'site.webmanifest' | prepend:'/assets/favicons/' | absolute_url }}">
 <link rel="mask-icon" href="{{ 'safari-pinned-tab.svg' | prepend:'/assets/favicons/' | absolute_url }}" color="#363636">
 <link rel="shortcut icon" href="{{ 'favicon.ico' | prepend:'/assets/favicons/' | absolute_url }}">
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="msapplication-config" content="{{ 'browserconfig.xml' | prepend:'/assets/favicons/' | absolute_url }}">
 <meta name="theme-color" content="#ffffff">
+
+<script>
+    // Function to handle language switch
+    function switchLanguage(lang, currentPageLang) {
+        // Get the current URL
+        var currentUrl = window.location.href;
+
+        // Find the index of "/HurricaneLog/" in the URL
+        var hurricaneLogIndex = currentUrl.indexOf('/HurricaneLog/');
+
+        // If "/HurricaneLog/" is found in the URL
+        if (hurricaneLogIndex !== -1) {
+            // Extract the base URL (up to the end of "/HurricaneLog/")
+            var baseUrl = currentUrl.substring(0, hurricaneLogIndex + '/HurricaneLog/'.length);
+
+            // Extract the current path (after "/HurricaneLog/")
+            var currentPath = currentUrl.substring(hurricaneLogIndex + '/HurricaneLog/'.length);
+
+            // Construct the new path based on the selected language
+            var newPath;
+
+            // If the current page's language is the same as the selected language, preserve the current path
+            if (currentPageLang === lang) {
+                newPath = currentUrl;
+            } else {
+                // Split the current path by '/' to find the language code
+                var pathParts = currentPath.split('/');
+
+                if (lang === 'en'){
+                    pathParts.shift();
+                    newPath = baseUrl + pathParts.join('/');
+                }
+                // Check if the current path contains a language code
+                else if (currentPageLang !== 'en' && pathParts.length > 1 && pathParts[0] !== '') {
+                    // Replace the existing language code with the new one
+                    pathParts[0] = lang;
+                    newPath = baseUrl + pathParts.join('/');
+                } else {
+                    // If the current path doesn't contain a language code, it's assumed to be the default language (English)
+                    // Construct the new path by prepending the language code
+                    newPath = baseUrl + lang + '/' + currentPath;
+                }
+            }
+
+            // Navigate to the new URL
+            window.location.href = newPath;
+        }
+    }
+</script>
 <!-- end custom head snippets -->

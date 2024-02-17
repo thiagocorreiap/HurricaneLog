@@ -1,3 +1,4 @@
+
 # main links
 main:
 #  - title: "Quick-Start Guide"
@@ -12,9 +13,5 @@ main:
     url: /features/
   - title: "Publications"
     url: /publications/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: ":globe_with_meridians: fr"
+    url: /fr/
